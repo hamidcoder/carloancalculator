@@ -1,0 +1,42 @@
+
+<br>
+<br>
+<div align="center">
+  <h3>Plan & Installments</h3>
+  <br>
+  <br>
+
+  <h3>{{msg}}</h3>
+  <div>
+    <label for='car model' >Choose Car Model</label>
+    <br>
+    <select id="Car Model" name="Car Model" [(ngModel)]='carModel'  >
+      <option value="320000">Honda Civic</option>
+      <option value="2800000">Toyota Crolla</option>
+      <option value="2100000">Honda City</option>
+      <option value="1500000">Suzuki Swift</option>
+    </select>
+    <br>
+    <label  >Price of model which you have choose :{{carModel}} </label>
+    <br>
+    <br>
+    <label for='dwnpayment' >Down Payment</label>
+    <br>
+    <input type="dwnpayment" id='dwnpayment' name='dwnpayment' [(ngModel)]='dwpymt' />
+    <br>
+    <!--<label for='markup' >Markup</label>-->
+    <!--<br>-->
+    <!--<input type="markup" id='markup' name='markup' [(ngModel)]='markup'/>-->
+    <!--<br>-->
+    <label for="Years">Years of Plan</label>
+    <br>
+    <select id="Years" name="Years" [(ngModel)]='years' >
+      <option value="3">3 Years</option>
+      <option value="4">4 Years</option>
+      <option value="5">5 Years</option>
+      </select>
+    <br>
+    <button type="button" (click)='plan()'>Caluculate</button>
+  </div>
+
+</div>
